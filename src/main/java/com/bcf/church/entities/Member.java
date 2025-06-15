@@ -31,4 +31,14 @@ public class Member {
     @Column(name = "birthday", nullable = false)
     @DateTimeFormat(pattern = "yyyy-mm-dd")
     private Date birthday;
+
+    @Column(name = "contact_number")
+    private String contactNumber;
+
+    @Column(name = "join_date")
+    private Date joinDate;
+    private String address;
+
+    @Column(name = "is_regular")
+    private int isRegular;
 }
